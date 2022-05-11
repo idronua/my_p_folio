@@ -1,0 +1,201 @@
+@font-face {
+	font-family: SueEllenFrancisco;
+	src: url('../font/Sue_Ellen_Francisco/SueEllenFrancisco-Regular.ttf');
+}
+
+@font-face {
+	font-family: Abel;
+	src: url('../font/Abel/Abel-Regular.ttf');
+}
+
+body, html {
+	height: 100%;
+}
+
+/*-------Navbar*/
+.navbar {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  width: 100%;
+  
+}
+.menu-toggler {
+	background-color: rgba(21, 21, 21, 0.4);
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 200px;
+}
+.menu-toggler a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bolder;
+	padding-bottom: 5px;
+}
+.menu-toggler a:hover {
+	color: #FF8F35;
+}
+.navbar-nav {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  width: 30%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+.navbar-nav.active {
+  left: 0;
+  
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  background-color: rgba(21, 21, 21, 0.4);
+  top: 50px;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+.nav-item a{
+	font-family: SueEllenFrancisco;
+	color: #fff;
+	text-decoration: none;
+
+}
+.nav-item a:hover {
+	font-family: SueEllenFrancisco;
+	color: #FF8F35;
+}
+
+
+/*---------Center page*/
+
+#main {
+	background: #212121;
+}
+#main img {
+	width: 70%;
+	filter: invert(77%) sepia(13%) saturate(5986%) hue-rotate(344deg) brightness(103%) contrast(95%);
+}
+
+h1, h3, h5	{
+	font-family: SueEllenFrancisco;
+	color: #fff;
+}
+
+
+/* --------Me */
+
+#me {
+	background: #f2eded;
+}
+
+#me .row {
+	max-height: 100%;
+}
+
+/*---------For you*/
+
+#for_you {
+	background: #212121;
+}
+
+#for_you p {
+	color: #FF8F35;
+}
+
+#for_you a img{
+	margin-top: 10px;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+.img_1 {
+	object-position: 0px -230px;
+}
+
+.img_3 {
+	object-position: 0px -340px;
+}
+
+#for_you a img:hover {
+	border: 3px solid #FF8F35;
+	transition: all 0.2s ease; 
+}
+
+.project {
+	position: relative;
+	overflow: hidden;
+}
+
+.project .overlay {
+	position: absolute;
+ width: 350px;
+ height: 125px;
+ color: #FF8F35;
+ background-color: rgba(21, 21, 21, 0.2);
+ border-radius: 5px;
+ top: 40px;
+ right: 20px;
+ padding: 10px;
+}
+
+.project .overlay:hover {
+	background-color: rgba(21, 21, 21, 0.8);
+}
+
+@media only screen and (max-width: 600px){
+	.img_1 {
+		object-position: 0px -20px;
+	}
+
+	.img_3 {
+		object-position: 0px -35px;
+	}
+	.project .overlay{
+		right: 5px;
+		top: 30px;
+
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.img_1 {
+		object-position: 0px 0px;
+	}
+
+	.img_3 {
+		object-position: 0px -10px;
+	}
+	.project .overlay{
+		right: 5px;
+		top: 50px;
+		width: 283px
+	}
+	.overlay p {
+		font-size: 13px
+	}
+}
+
+/*----------Connection*/
+
+.box-icon {
+	color: #FF8F35;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+}
+
+#connection p {
+	font-family: Abel;
+}
+
+
+
