@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -17,7 +20,7 @@
   <body>
 
   	<!-- Navbar -->
-  	<nav class="navbar">
+  	<nav class="navbar" data-aos="fade-right">
   	  <div class="container">
   	    <div class="menu-toggler ml-2 mt-1">
   	      <a href="#!">
@@ -48,9 +51,9 @@
   	<section id="main" class="h-100">
   		<div class="container h-100 d-flex">
   			<div class="col-lg-6 col-md-8 col-xs-12 text-center mx-auto align-self-center">
-	  			<img src="icon/i_kod2.svg" alt="icon_kodt" class="d-inline">
-	  			<h1 class="d-inline align-top">KodT</h1>
-	  			<p class="text-white mt-2 fs-4">All web developing services for your needs</p>
+	  			<img src="icon/i_kod2.svg" alt="icon_kodt" class="d-inline" data-aos="fade-right">
+	  			<h1 class="d-inline align-top" data-aos="flip-up">KodT</h1>
+	  			<p class="text-white mt-2 fs-4" data-aos="fade-up">All web developing services for your needs</p>
   			</div>
   		</div>
   	</section>
@@ -60,16 +63,18 @@
   		<div class="container-fluid py-3">
   			<h1 class="text-dark text-center py-2">Me</h1>
   			<div class="row align-items-center justify-content-around">
-  				<div class="col-md-4">
+  				<div class="col-md-4" data-aos="fade-right">
   					<h3 class="text-dark p-3 ">What can I say...</h3>
-  					<p class="px-3">Surfing through the life, who knew it could bring you to the world of code. I have been in different (various) spheres of living. Working here and there as you need to developing, growing, you are finally choosing a place to call it "mine"</p>
+  					<p class="px-3" >Surfing through the life, who knew it could bring you to the world of code. I have been in different (various) spheres of living. Working here and there as you need to developing, growing, you are finally choosing a place to call it "mine"
+  						<br>
+  					My name is Andrii. Let's chat how my creativity could be helpful for you. Down below you can find my contact info.</p>
   				</div>
   				<div class="col-md-7 d-flex h-100">
   					<div class="two-img d-flex flex-column w-75">
-  						<img src="img/me-sunset.jpg" class="p-1" alt="me and sunset">
-  						<img src="img/me-beach2.jpg" class="p-1" alt="me on the beach">
+  						<img src="img/me-sunset.jpg" class="p-1" alt="me and sunset" data-aos="flip-down">
+  						<img src="img/me-beach2.jpg" class="p-1" alt="me on the beach" data-aos="flip-right">
   					</div>
-  					<img src="img/me1.jpg" class="img-fluid w-25 p-1" alt="me">
+  					<img src="img/me1.jpg" class="img-fluid w-25 p-1" alt="me" data-aos="flip-up">
   				</div>
   			</div>
   		</div>
@@ -82,36 +87,48 @@
   			<div class="row">
   				<h1 class="text-center pt-4">For You</h1>
   				<p class="text-center">Check out my latest work</p>
-  				<div class="col-12">
+  				<div class="col-12" data-aos="fade-right">
   					<div class="project">
   						<a href="https://idronua.github.io/painting_services/" class="text-decoration-none">
   							<img src="img/cards/painting.PNG" class="img img_1" alt="Painting-services">
   						</a>
-  						<div class="overlay">
-				  			<h3 class="">Painting services</h3>
-			    		<p class="">One of the small family businesses who decided to add a simple responsive website as a business card for their clients.</p>
-  					</div>
+  						<div class="row justify-content-end">
+  							<div class="col-md-4 col-7 overlay">
+  								<a class="text-decoration-none " data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample"><h3 class="text-center mb-0">Painting services</h3></a>
+  								<div class="collapse" id="collapseExample1">
+  									<p class="mx-2 mt-2 lh-sm">One of the small family businesses who decided to add a simple responsive website as a business card for their clients.</p>
+  								</div>
+  							</div>
+  						</div>
   					</div>
   				</div>
-  				<div class="col-12">
+  				<div class="col-12" data-aos="fade-left">
   					<div class="project">
 	  					<a href="https://idronua.github.io/Cottage_rental/" class="text-decoration-none">
 	  						<img src="img/cards/cottage_rental.PNG" class="img" alt="Cottage-rental">
 	  					</a>
-	  					<div class="overlay">
-				  			<h3 class="">Cottage rental</h3>
-			    		<p class="">Having a website for your business is already great additional feature, surely makes you outstandable among others.</p>
+	  					<div class="row justify-content-end">
+	  						<div class="col-md-4 col-7 overlay">
+	  							<a class="text-decoration-none " data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"><h3 class="text-center mb-0">Cottage rental</h3></a>
+	  							<div class="collapse" id="collapseExample2">
+	  								<p class="mx-2 mt-2 lh-sm">Having a website for your business is already great additional feature, surely makes you outstandable among others.</p>
+	  							</div>
+	  						</div>
 	  					</div>
   					</div>
   				</div>
-  				<div class="col-12">
+  				<div class="col-12" data-aos="fade-right">
   					<div class="project">
 		  				<a href="https://idronua.github.io/bakery_store/" class="text-decoration-none">
 		  					<img src="img/cards/bakery-store.PNG" class="img img_3" alt="Bakery-store">
 		  				</a>
-		  				<div class="overlay">
-				  			<h3 class="">Bakery store</h3>
-			    		<p class="">Certainly you need a website if you have what to show off. It's more convinient for your clients to see what you offer online.</p>
+		  				<div class="row justify-content-end">
+		  					<div class="col-md-4 col-7 overlay">
+		  						<a class="text-decoration-none " data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"><h3 class="text-center mb-0">Bakery store</h3></a>
+		  						<div class="collapse" id="collapseExample3">
+		  							<p class="mx-2 mt-2 lh-sm">Certainly you need a website if you have what to show off. It's more convinient for your clients to see what you offer online.</p>
+		  						</div>
+		  					</div>
 		  				</div>
   					</div>
   			</div>
@@ -124,29 +141,29 @@
   			<div class="row g-3">
   				<h1 class="text-center text-dark mb-3">Connection</h1>
   				<p class="text-center mt-0" style="color: #FF8F35;">What I can do for you is...</p>
-  				<div class="col-md-3 col-6 p-2">
-  					<div class="box-icon pb-2">
+  				<div class="col-md-3 col-6 p-2 layer" data-aos="flip-left" data-aos-delay="1300">
+  					<div class="box-icon pb-2 mt-2">
 	  					<i class='bx bxs-palette'></i>
   					</div>
-  					<h3 class="rounded-pill bg-dark text-center py-2">Create Brand</h3>
+  					<h3 class="rounded-pill bg-dark text-center py-2 mx-1">Create Brand</h3>
   					<p class="px-3 mt-2 fs-5">Making logo, ideas, design, photos, etc.</p>
   				</div>
-  				<div class="col-md-3 col-6 p-2">
-  					<div class="box-icon pb-2">
+  				<div class="col-md-3 col-6 p-2 layer" data-aos="flip-left" data-aos-delay="1600">
+  					<div class="box-icon pb-2 mt-2">
   						<i class='bx bxs-customize'></i>
   					</div>
   					<h3 class="rounded-pill bg-dark text-center py-2">Build website</h3>
   					<p class="px-3 mt-2 fs-5">Turning your idea into a website.</p>
   				</div>
-  				<div class="col-md-3 col-6 p-2">
-  					<div class="box-icon pb-2">
+  				<div class="col-md-3 col-6 p-2 layer" data-aos="flip-left" data-aos-delay="1900">
+  					<div class="box-icon pb-2 mt-2">
   						<i class='bx bxs-add-to-queue'></i>
   					</div>
   					<h3 class="rounded-pill bg-dark text-center py-2">More web services</h3>
   					<p class="px-3 mt-2 fs-5">Adding services to your website (payments, database, etc.).</p>
   				</div>
-  				<div class="col-md-3 col-6 p-2">
-  					<div class="box-icon pb-2">
+  				<div class="col-md-3 col-6 p-2 layer" data-aos="flip-left" data-aos-delay="2200">
+  					<div class="box-icon pb-2 mt-2">
   						<i class='bx bx-signal-5'></i>
   					</div>
   					<h3 class="rounded-pill bg-dark text-center py-2">Connect hosting</h3>
@@ -156,13 +173,35 @@
   		</div>
   	</section>
 
+  	<!-- Footer -->
+  	<footer class="">
+  		<div class="container py-5">
+  			<div class="row">
+  				<div class="col-md-4 col-12 my-4 d-flex align-items-center" data-aos="fade-right">
+  					<p class="fs-4 text-center mb-0">"Bring your business online now"</p>
+  				</div>
+  				<div class="col-md-4 col-12 text-center my-4"data-aos="fade-up">
+  					<img src="icon/i_kod2.svg" alt="icon_kodt" class="d-inline">
+  					<h3 class="d-inline align-top">KodT</h1>
+  				</div>
+  				<div class="col-md-4 col-12 text-center gx-2 align-items-center my-4" data-aos="fade-left">
+  					<a class="text-decoration-none text-white" href="https://www.linkedin.com/in/andrii-laguta-453b52234"><i class='bx bxl-linkedin'></i></a>
+  					<a class="text-decoration-none text-white" href="https://github.com/idronua"><i class='bx bxl-github'></i></a>
+  					<a class="text-decoration-none text-white " href="tel:647-674-5556"><i class='bx bxs-phone phone_icon'></i></a>
+  				</div>
+  			</div>
+  		</div>
+  	</footer>
+
   	 
-    <!-- My JS -->
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-      
+   <!-- Icons JS -->
+   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+   <!-- AOS library -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- JQuery library -->
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    
-   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <!-- Bootstrap Bundle with Popper -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
    <!-- My JS -->

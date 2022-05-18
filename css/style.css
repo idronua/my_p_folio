@@ -12,13 +12,17 @@ body, html {
 	height: 100%;
 }
 
+p {
+	font-family: Abel;
+}
+
 /*-------Navbar*/
 .navbar {
   position: fixed;
   top: 15px;
   left: 20px;
   width: 100%;
-  
+  z-index: 1;
 }
 .menu-toggler {
 	background-color: rgba(21, 21, 21, 0.4);
@@ -117,7 +121,7 @@ h1, h3, h5	{
 	border-radius: 4px;
 }
 .img_1 {
-	object-position: 0px -230px;
+	object-position: 0px -320px;
 }
 
 .img_3 {
@@ -136,16 +140,15 @@ h1, h3, h5	{
 
 .project .overlay {
 	position: absolute;
- width: 350px;
- height: 125px;
- color: #FF8F35;
- background-color: rgba(21, 21, 21, 0.2);
+ background-color: rgba(21, 21, 21, 0.4);
  border-radius: 5px;
- top: 40px;
- right: 20px;
  padding: 10px;
+ top: 20px;
+ right: 20px;
+ z-index: 1;
 }
 
+	
 .project .overlay:hover {
 	background-color: rgba(21, 21, 21, 0.8);
 }
@@ -158,11 +161,6 @@ h1, h3, h5	{
 	.img_3 {
 		object-position: 0px -35px;
 	}
-	.project .overlay{
-		right: 5px;
-		top: 30px;
-
-	}
 }
 
 @media only screen and (max-width: 400px){
@@ -172,14 +170,6 @@ h1, h3, h5	{
 
 	.img_3 {
 		object-position: 0px -10px;
-	}
-	.project .overlay{
-		right: 5px;
-		top: 50px;
-		width: 283px
-	}
-	.overlay p {
-		font-size: 13px
 	}
 }
 
@@ -196,6 +186,42 @@ h1, h3, h5	{
 #connection p {
 	font-family: Abel;
 }
+
+.layer:hover {
+	transition: all 0.4 ease;
+	background: rgba(21, 21, 21, 0.4);
+	border-radius: 5px;
+}
+
+/*-----Footer*/
+footer {
+	background-color: #212121;
+}
+
+footer p {
+	color: #FF8F35;
+	font-family: Abel;
+}
+
+footer img {
+	width: 40%;
+	filter: invert(77%) sepia(13%) saturate(5986%) hue-rotate(344deg) brightness(103%) contrast(95%);
+}
+
+
+footer a {
+	font-size: 40px;
+	padding: 5px;
+}
+
+footer .bx:hover {
+	color: #FF8F35;
+}
+
+.phone_icon {
+	transform: rotate(257deg);
+}
+
 
 
 
